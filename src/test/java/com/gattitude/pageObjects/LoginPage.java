@@ -1,4 +1,4 @@
-package com.gattitue.pageObjects;
+package com.gattitude.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
