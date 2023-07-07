@@ -43,7 +43,7 @@ public class TC_01_LoginTest extends BaseClass
 		lp.enterEmail(prop.getProperty("validemail"));
 		lp.enterPassword(prop.getProperty("validpwd"));
 		lp.clickLogin();
-
+			//change in Login test
 		Assert.assertTrue(driver.findElement(By.linkText("Edit your xyz account information")).isDisplayed(),"Failed to display");
 	}
 	
