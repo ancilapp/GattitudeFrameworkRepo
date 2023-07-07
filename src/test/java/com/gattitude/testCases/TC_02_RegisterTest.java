@@ -36,6 +36,7 @@ public class TC_02_RegisterTest extends BaseClass
 		String expectedLabel = "First Name";
 		System.out.println(actualLabel);
 		Assert.assertTrue(actualLabel.contains(expectedLabel), "Failed");
+		//testing normal push//
 		
 	}
 	
