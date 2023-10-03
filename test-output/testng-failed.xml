@@ -7,10 +7,6 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyLoginNoCred"/>
-          <include name="verifyLoginInvalidCreds"/>
-          <include name="verifyLoginValidEmailInvalidPwd"/>
-          <include name="verifyLoginValidEmailValidPwd"/>
           <include name="verifyLogin"/>
         </methods>
       </class> <!-- com.gattitude.testCases.TC_01_LoginTest -->
