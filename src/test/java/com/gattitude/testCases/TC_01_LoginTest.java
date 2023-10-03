@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import com.gattitude.base.BaseClass;
 import com.gattitude.pageObjects.HomePage;
 import com.gattitude.pageObjects.LoginPage;
+import com.gattitude.utils.Utilities;
 
 public class TC_01_LoginTest extends BaseClass 
 {
@@ -47,6 +48,7 @@ public class TC_01_LoginTest extends BaseClass
 		Assert.assertTrue(driver.findElement(By.linkText("Edit your xyz account information")).isDisplayed(),"Failed to display");
 	}
 	
+	/*
 	@DataProvider
 	public Object[][] supplyTestData(){
 		Object [][] data = {
@@ -57,16 +59,12 @@ public class TC_01_LoginTest extends BaseClass
 		
 		return data;
 				
-	}
+	}	*/
 	
-	/*
-	@DataProvider(name="ohwell")
-	public Object[][] supplyTestData(){
-		Object [][] data = Utilities.getTestDataFromExcel("Login");
-		return data;
-	}
-	*/
-	@Test(priority=2,dataProvider="supplyTestData")
+	
+
+	
+	@Test(priority=2,dataProvider="credentialSupplier")
 	public void verifyLoginInvalidCreds(String email, String pwd) 
 	{
 		/*
@@ -81,6 +79,13 @@ public class TC_01_LoginTest extends BaseClass
 		String expectedWarningMessage = "Warning: No match for E-Mail Address and/or Password.";
 		Assert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Failed");
 	}
+	
+	@DataProvider(name="credentialSupplier")
+	public Object[][] supplyTestData(){
+		Object [][] data = Utilities.getTestDataFromExcel("Login");
+		return data;
+	}
+	
 	
 	@Test(priority=3)
 	public void verifyLoginValidEmailInvalidPwd() 
