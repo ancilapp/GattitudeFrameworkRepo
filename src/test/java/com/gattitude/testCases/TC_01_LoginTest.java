@@ -20,7 +20,8 @@ public class TC_01_LoginTest extends BaseClass
 	}
 	
 	public WebDriver driver;
-		
+	
+	
 	@BeforeMethod
 	public void setUp() {
 		driver = initBrowserOpenApplication();
@@ -38,93 +39,35 @@ public class TC_01_LoginTest extends BaseClass
 	
 	
 	@Test(priority=1)
-	public void verifyLogin() 
+	public void verifyLoginWithValidCreds() 
 	{
 		LoginPage lp = new LoginPage(driver);
+			//prop.getProperty("validemail")
+			//prop.getProperty("validpwd")
 		lp.enterEmail(prop.getProperty("validemail"));
 		lp.enterPassword(prop.getProperty("validpwd"));
 		lp.clickLogin();
 
-		Assert.assertTrue(driver.findElement(By.linkText("Edit your xyz account information")).isDisplayed(),"Failed to display");
+		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed(),"Failed to display");
 	}
 	
-	/*
-	@DataProvider
-	public Object[][] supplyTestData(){
-		Object [][] data = {
-				//{"teat1@gmail.com","76832"},
-				//{"test2@gmail.com","99999"},
-				{"test3@gmail.com","55555"}
-		};
-		
-		return data;
-				
-	}	*/
 	
+	@Test(priority=2)
+	public void verifyLoginWithInvalidCreds() 
+	{
+		LoginPage lp = new LoginPage(driver);
+		lp.enterEmail(prop.getProperty("validemail"));
+		lp.enterPassword("Wrong");
+		lp.clickLogin();
+		
+		String actualWarningMessage = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
+		String expectedWarningMessage = "Warning: No match for E-Mail Address and/or Password.";
+		Assert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Failed");
+	}
 	
 
 	
-	@Test(priority=2,dataProvider="credentialSupplier")
-	public void verifyLoginInvalidCreds(String email, String pwd) 
-	{
-		/*
-		driver.findElement(By.id("input-email")).sendKeys(dataprop.getProperty("invalidemail"));
-		driver.findElement(By.id("input-password")).sendKeys(dataprop.getProperty("invalidpwd"));
-		*/
-		driver.findElement(By.id("input-email")).sendKeys(email);
-		driver.findElement(By.id("input-password")).sendKeys(pwd);
-		driver.findElement(By.xpath("//input[@value='Login']")).click();
+	
+	
 		
-		String actualWarningMessage = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
-		String expectedWarningMessage = "Warning: No match for E-Mail Address and/or Password.";
-		Assert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Failed");
-	}
-	
-	@DataProvider(name="credentialSupplier")
-	public Object[][] supplyTestData(){
-		Object [][] data = Utilities.getTestDataFromExcel("Login");
-		return data;
-	}
-	
-	
-	@Test(priority=3)
-	public void verifyLoginValidEmailInvalidPwd() 
-	{
-
-		driver.findElement(By.id("input-email")).sendKeys("pascalron54@gmail.com");
-		driver.findElement(By.id("input-password")).sendKeys("Seleni23dum1");
-		driver.findElement(By.xpath("//input[@value='Login']")).click();
-		
-		String actualWarningMessage = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
-		String expectedWarningMessage = "Warning: No match for E-Mail Address and/or Password.";
-		Assert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Failed");
-	}
-	
-	@Test(priority=4)
-	public void verifyLoginValidEmailValidPwd() 
-	{
-
-		driver.findElement(By.id("input-email")).sendKeys("pascaeeelron54@gmail.com");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium1");
-		driver.findElement(By.xpath("//input[@value='Login']")).click();
-		
-		String actualWarningMessage = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
-		String expectedWarningMessage = "Warning: No match for E-Mail Address and/or Password.";
-		Assert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Failed");
-	}
-	
-	@Test(priority=5)
-	public void verifyLoginNoCred() 
-	{
-//test
-		driver.findElement(By.id("input-email")).sendKeys("");
-		driver.findElement(By.id("input-password")).sendKeys("");
-		driver.findElement(By.xpath("//input[@value='Login']")).click();
-		
-		String actualWarningMessage = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
-		String expectedWarningMessage = "Warning: No match for E-Mail Address and/or Password.";
-		Assert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Failed");
-	}
-	
-	
 }

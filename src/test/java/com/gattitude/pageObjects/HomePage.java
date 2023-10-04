@@ -9,11 +9,18 @@ public class HomePage {
 
 	WebDriver driver;
 	
+	//Objects
 	@FindBy(xpath="//span[text()='My Account']")
 	private WebElement dropdownMyAccount;
 	
 	@FindBy(linkText="Login")
 	private WebElement btnLogin;
+	
+	@FindBy(name="search")
+	private WebElement txtSearchItem;
+	
+	@FindBy(xpath="//div[@id='search']/descendant::button")
+	private WebElement btnSearch;
 	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
@@ -27,5 +34,13 @@ public class HomePage {
 	
 	public void clickLogin() {
 		btnLogin.click();
+	}
+	
+	public void enterSearchItem(String item) {
+		txtSearchItem.sendKeys(item);
+	}
+	
+	public void btnSearchItem() {
+		btnSearch.click();
 	}
 }
