@@ -6,8 +6,9 @@
       <class name="com.gattitude.testCases.TC_01_LoginTest">
         <methods>
           <include name="tearDown"/>
+          <include name="verifyLoginWithValidCreds"/>
           <include name="setUp"/>
-          <include name="verifyLogin"/>
+          <include name="verifyLoginWithInvalidCreds"/>
         </methods>
       </class> <!-- com.gattitude.testCases.TC_01_LoginTest -->
     </classes>
