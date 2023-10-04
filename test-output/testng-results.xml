@@ -1,203 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-03T10:41:47 EDT" name="Default suite" finished-at="2023-10-03T10:42:45 EDT" duration-ms="58033">
+  <suite started-at="2023-10-04T16:38:32 EDT" name="Default suite" finished-at="2023-10-04T16:38:49 EDT" duration-ms="17051">
     <groups>
     </groups>
-    <test started-at="2023-10-03T10:41:47 EDT" name="Default test" finished-at="2023-10-03T10:42:45 EDT" duration-ms="58033">
-      <class name="com.gattitude.testCases.TC_01_LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:41:47 EDT" name="setUp" finished-at="2023-10-03T10:41:55 EDT" duration-ms="8649" status="PASS">
+    <test started-at="2023-10-04T16:38:32 EDT" name="Default test" finished-at="2023-10-04T16:38:49 EDT" duration-ms="17051">
+      <class name="com.gattitude.testCases.TC_02_SearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@1aafa419]" started-at="2023-10-04T16:38:32 EDT" name="setUp" finished-at="2023-10-04T16:38:41 EDT" duration-ms="8399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:1, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:41:55 EDT" name="verifyLogin" finished-at="2023-10-03T10:42:07 EDT" duration-ms="11153" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Edit your xyz account information"}
-  (Session info: chrome=117.0.5938.132)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9d83a2638afccd3c5c267aaf8ae72d05, findElement {using=link text, value=Edit your xyz account information}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.132, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\bliss\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63794}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63794/devtoo..., se:cdpVersion: 117.0.5938.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9d83a2638afccd3c5c267aaf8ae72d05]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Edit your xyz account information"}
-  (Session info: chrome=117.0.5938.132)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9d83a2638afccd3c5c267aaf8ae72d05, findElement {using=link text, value=Edit your xyz account information}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.132, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\bliss\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63794}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63794/devtoo..., se:cdpVersion: 117.0.5938.132, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9d83a2638afccd3c5c267aaf8ae72d05
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at com.gattitude.testCases.TC_01_LoginTest.verifyLogin(TC_01_LoginTest.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:07 EDT" name="tearDown" finished-at="2023-10-03T10:42:07 EDT" duration-ms="283" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:08 EDT" name="setUp" finished-at="2023-10-03T10:42:13 EDT" duration-ms="5155" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginInvalidCreds(java.lang.String,java.lang.String)[pri:2, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:13 EDT" name="verifyLoginInvalidCreds" data-provider="credentialSupplier" finished-at="2023-10-03T10:42:14 EDT" duration-ms="874" status="PASS">
+        <test-method signature="searchItem(java.lang.String,java.lang.String)[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@1aafa419]" started-at="2023-10-04T16:38:41 EDT" name="searchItem" data-provider="searchItemList" finished-at="2023-10-04T16:38:42 EDT" duration-ms="863" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test1@gmail.com]]>
+                <![CDATA[canon]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[99999]]>
+                <![CDATA[test]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginInvalidCreds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:14 EDT" name="tearDown" finished-at="2023-10-03T10:42:14 EDT" duration-ms="197" status="PASS">
+        </test-method> <!-- searchItem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@1aafa419]" started-at="2023-10-04T16:38:42 EDT" name="tearDown" finished-at="2023-10-04T16:38:42 EDT" duration-ms="324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:14 EDT" name="setUp" finished-at="2023-10-03T10:42:19 EDT" duration-ms="4888" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@1aafa419]" started-at="2023-10-04T16:38:42 EDT" name="setUp" finished-at="2023-10-04T16:38:48 EDT" duration-ms="6025" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginInvalidCreds(java.lang.String,java.lang.String)[pri:2, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:19 EDT" name="verifyLoginInvalidCreds" data-provider="credentialSupplier" finished-at="2023-10-03T10:42:20 EDT" duration-ms="851" status="PASS">
+        <test-method signature="searchItem(java.lang.String,java.lang.String)[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@1aafa419]" started-at="2023-10-04T16:38:48 EDT" name="searchItem" data-provider="searchItemList" finished-at="2023-10-04T16:38:49 EDT" duration-ms="964" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test2@gmail.com]]>
+                <![CDATA[phone]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[88888]]>
+                <![CDATA[iPhone]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginInvalidCreds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:20 EDT" name="tearDown" finished-at="2023-10-03T10:42:20 EDT" duration-ms="186" status="PASS">
+        </test-method> <!-- searchItem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@1aafa419]" started-at="2023-10-04T16:38:49 EDT" name="tearDown" finished-at="2023-10-04T16:38:49 EDT" duration-ms="347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:20 EDT" name="setUp" finished-at="2023-10-03T10:42:25 EDT" duration-ms="4948" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginInvalidCreds(java.lang.String,java.lang.String)[pri:2, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:25 EDT" name="verifyLoginInvalidCreds" data-provider="credentialSupplier" finished-at="2023-10-03T10:42:26 EDT" duration-ms="829" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test3@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[77777]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginInvalidCreds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:26 EDT" name="tearDown" finished-at="2023-10-03T10:42:26 EDT" duration-ms="185" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:26 EDT" name="setUp" finished-at="2023-10-03T10:42:31 EDT" duration-ms="5635" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginValidEmailInvalidPwd()[pri:3, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:31 EDT" name="verifyLoginValidEmailInvalidPwd" finished-at="2023-10-03T10:42:32 EDT" duration-ms="897" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginValidEmailInvalidPwd -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:32 EDT" name="tearDown" finished-at="2023-10-03T10:42:33 EDT" duration-ms="243" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:33 EDT" name="setUp" finished-at="2023-10-03T10:42:37 EDT" duration-ms="4955" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginValidEmailValidPwd()[pri:4, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:37 EDT" name="verifyLoginValidEmailValidPwd" finished-at="2023-10-03T10:42:38 EDT" duration-ms="890" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginValidEmailValidPwd -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:38 EDT" name="tearDown" finished-at="2023-10-03T10:42:39 EDT" duration-ms="238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:39 EDT" name="setUp" finished-at="2023-10-03T10:42:44 EDT" duration-ms="5049" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginNoCred()[pri:5, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:44 EDT" name="verifyLoginNoCred" finished-at="2023-10-03T10:42:45 EDT" duration-ms="854" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginNoCred -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@3270d194]" started-at="2023-10-03T10:42:45 EDT" name="tearDown" finished-at="2023-10-03T10:42:45 EDT" duration-ms="184" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.gattitude.testCases.TC_01_LoginTest -->
+      </class> <!-- com.gattitude.testCases.TC_02_SearchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
