@@ -40,7 +40,14 @@ public class TC_02_SearchTest extends BaseClass {
 		return data;
 	}
 	
-	@Test(dataProvider="searchItemList")
+	@DataProvider(name="searchItemExcel")
+	public Object[][] supplyExcelData(){
+		Object[][] data = Utilities.getTestDataFromExcel("Login") ;
+				return data;
+	}
+	
+	
+	@Test(dataProvider="searchItemExcel")
 	public void searchItem(String lookupItem, String searchResult) {
 		HomePage homepg = new HomePage(driver);
 		homepg.enterSearchItem(lookupItem);

@@ -21,8 +21,7 @@ public class Utilities {
 	
 	public static Object[][] getTestDataFromExcel(String sheetName) 
 	{
-		File excelFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\gattitude\\testData\\testdata.xlsx");
-		
+		File excelFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\gattitude\\testdata\\testdata.xlsx");
 		XSSFWorkbook workbook= null;
 		try {
 			FileInputStream fisExcel = new FileInputStream(excelFile);
@@ -39,6 +38,7 @@ public class Utilities {
 		Object [][] data = new Object[rows][cols];
 		
 		for(int i=0;i<rows;i++) {
+			
 			XSSFRow row = sheet.getRow(i+1);
 			
 			for(int j=0;j<cols;j++) {
