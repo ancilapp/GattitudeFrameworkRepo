@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-04T17:36:37 EDT" name="Gattitude Automation Suite" finished-at="2023-10-04T17:37:06 EDT" duration-ms="29055">
+  <suite started-at="2023-10-05T16:05:06 EDT" name="Default suite" finished-at="2023-10-05T16:05:28 EDT" duration-ms="21674">
     <groups>
     </groups>
-    <test started-at="2023-10-04T17:36:37 EDT" name="Gattitude Tests" finished-at="2023-10-04T17:37:06 EDT" duration-ms="29055">
+    <test started-at="2023-10-05T16:05:06 EDT" name="Default test" finished-at="2023-10-05T16:05:28 EDT" duration-ms="21674">
       <class name="com.gattitude.testCases.TC_02_SearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@36ebc363]" started-at="2023-10-04T17:36:52 EDT" name="setUp" finished-at="2023-10-04T17:36:58 EDT" duration-ms="5620" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@47eaca72]" started-at="2023-10-05T16:05:07 EDT" name="setUp" finished-at="2023-10-05T16:05:14 EDT" duration-ms="7173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchItem(java.lang.String,java.lang.String)[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@36ebc363]" started-at="2023-10-04T17:36:58 EDT" name="searchItem" data-provider="searchItemList" finished-at="2023-10-04T17:36:59 EDT" duration-ms="821" status="PASS">
+        <test-method signature="searchItem(java.lang.String,java.lang.String)[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@47eaca72]" started-at="2023-10-05T16:05:14 EDT" name="searchItem" data-provider="searchItemExcel" finished-at="2023-10-05T16:05:15 EDT" duration-ms="825" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hp]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[HP LP3065]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@47eaca72]" started-at="2023-10-05T16:05:15 EDT" name="tearDown" finished-at="2023-10-05T16:05:16 EDT" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@47eaca72]" started-at="2023-10-05T16:05:16 EDT" name="setUp" finished-at="2023-10-05T16:05:21 EDT" duration-ms="5045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchItem(java.lang.String,java.lang.String)[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@47eaca72]" started-at="2023-10-05T16:05:21 EDT" name="searchItem" data-provider="searchItemExcel" finished-at="2023-10-05T16:05:21 EDT" duration-ms="827" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,26 +44,26 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[test]]>
+                <![CDATA[Canon EOS 5D]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@36ebc363]" started-at="2023-10-04T17:36:59 EDT" name="tearDown" finished-at="2023-10-04T17:36:59 EDT" duration-ms="231" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@47eaca72]" started-at="2023-10-05T16:05:21 EDT" name="tearDown" finished-at="2023-10-05T16:05:22 EDT" duration-ms="360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@36ebc363]" started-at="2023-10-04T17:36:59 EDT" name="setUp" finished-at="2023-10-04T17:37:04 EDT" duration-ms="5438" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@47eaca72]" started-at="2023-10-05T16:05:22 EDT" name="setUp" finished-at="2023-10-05T16:05:27 EDT" duration-ms="4886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchItem(java.lang.String,java.lang.String)[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@36ebc363]" started-at="2023-10-04T17:37:04 EDT" name="searchItem" data-provider="searchItemList" finished-at="2023-10-04T17:37:05 EDT" duration-ms="832" status="PASS">
+        <test-method signature="searchItem(java.lang.String,java.lang.String)[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@47eaca72]" started-at="2023-10-05T16:05:27 EDT" name="searchItem" data-provider="searchItemExcel" finished-at="2023-10-05T16:05:27 EDT" duration-ms="755" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[phone]]>
+                <![CDATA[iphone]]>
               </value>
             </param>
             <param index="1">
@@ -51,37 +75,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@36ebc363]" started-at="2023-10-04T17:37:05 EDT" name="tearDown" finished-at="2023-10-04T17:37:06 EDT" duration-ms="247" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_02_SearchTest@47eaca72]" started-at="2023-10-05T16:05:27 EDT" name="tearDown" finished-at="2023-10-05T16:05:28 EDT" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.gattitude.testCases.TC_02_SearchTest -->
-      <class name="com.gattitude.testCases.TC_01_LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@235834f2]" started-at="2023-10-04T17:36:37 EDT" name="setUp" finished-at="2023-10-04T17:36:44 EDT" duration-ms="7128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithValidCreds()[pri:1, instance:com.gattitude.testCases.TC_01_LoginTest@235834f2]" started-at="2023-10-04T17:36:44 EDT" name="verifyLoginWithValidCreds" finished-at="2023-10-04T17:36:46 EDT" duration-ms="1423" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCreds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@235834f2]" started-at="2023-10-04T17:36:46 EDT" name="tearDown" finished-at="2023-10-04T17:36:46 EDT" duration-ms="322" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@235834f2]" started-at="2023-10-04T17:36:46 EDT" name="setUp" finished-at="2023-10-04T17:36:51 EDT" duration-ms="5342" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithInvalidCreds()[pri:2, instance:com.gattitude.testCases.TC_01_LoginTest@235834f2]" started-at="2023-10-04T17:36:51 EDT" name="verifyLoginWithInvalidCreds" finished-at="2023-10-04T17:36:52 EDT" duration-ms="861" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInvalidCreds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gattitude.testCases.TC_01_LoginTest@235834f2]" started-at="2023-10-04T17:36:52 EDT" name="tearDown" finished-at="2023-10-04T17:36:52 EDT" duration-ms="273" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.gattitude.testCases.TC_01_LoginTest -->
-    </test> <!-- Gattitude Tests -->
-  </suite> <!-- Gattitude Automation Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

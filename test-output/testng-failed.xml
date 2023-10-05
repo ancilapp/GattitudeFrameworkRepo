@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.gattitude.testCases.TC_01_LoginTest">
+      <class name="com.gattitude.testCases.TC_02_SearchTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="verifyLoginWithValidCreds"/>
+          <include name="searchItem"/>
           <include name="setUp"/>
-          <include name="verifyLoginWithInvalidCreds"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.gattitude.testCases.TC_01_LoginTest -->
+      </class> <!-- com.gattitude.testCases.TC_02_SearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
