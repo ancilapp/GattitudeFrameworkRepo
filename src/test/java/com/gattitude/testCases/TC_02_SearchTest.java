@@ -1,6 +1,8 @@
 package com.gattitude.testCases;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -36,22 +38,25 @@ public class TC_02_SearchTest extends BaseClass {
 	
 	@DataProvider(name="searchItemList")
 	public Object[][] supplyTestData(){
-		Object [][] data = {{"canon","test"},{"phone","iPhone"}};
+		Object [][] data = {{"canon","Canon EOS 5D"},{"phone","iPhone"}};
 		return data;
 	}
 	
+	/*
 	@DataProvider(name="searchItemExcel")
 	public Object[][] supplyExcelData(){
 		Object[][] data = Utilities.getTestDataFromExcel("Login") ;
 				return data;
 	}
 	
-	
-	@Test(dataProvider="searchItemExcel")
+	*/
+	@Test(dataProvider="searchItemList")
 	public void searchItem(String lookupItem, String searchResult) {
 		HomePage homepg = new HomePage(driver);
 		homepg.enterSearchItem(lookupItem);
 		homepg.btnSearchItem();
+		System.out.println(searchResult);
+		Assert.assertTrue(driver.findElement(By.linkText(searchResult)).isDisplayed());
 		
 	}
 	
