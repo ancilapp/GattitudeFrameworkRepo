@@ -8,12 +8,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.gattitude.base.BaseClass;
+import com.gattitude.base.Base;
 import com.gattitude.pageObjects.HomePage;
 import com.gattitude.pageObjects.LoginPage;
 import com.gattitude.utils.Utilities;
 
-public class TC_01_LoginTest extends BaseClass 
+public class TC_01_LoginTest extends Base 
 {
 	public TC_01_LoginTest() {
 		super();

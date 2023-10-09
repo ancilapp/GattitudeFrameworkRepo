@@ -8,11 +8,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.gattitude.base.BaseClass;
+import com.gattitude.base.Base;
 import com.gattitude.pageObjects.HomePage;
 import com.gattitude.utils.Utilities;
 
-public class TC_02_SearchTest extends BaseClass {
+public class TC_02_SearchTest extends Base {
 	
 	
 	public TC_02_SearchTest() {
@@ -55,7 +55,11 @@ public class TC_02_SearchTest extends BaseClass {
 		HomePage homepg = new HomePage(driver);
 		homepg.enterSearchItem(lookupItem);
 		homepg.btnSearchItem();
-		System.out.println(searchResult);
+
+		
+		String lookingFor = driver.findElement(By.xpath("//div[@id='content']/descendant::h4")).getText();
+		System.out.println(lookingFor);
+		
 		Assert.assertTrue(driver.findElement(By.linkText(searchResult)).isDisplayed());
 		
 	}

@@ -10,13 +10,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.gattitude.utils.Utilities;
 
-public class BaseClass {
+public class Base {
 	
 	WebDriver driver;
 	public Properties prop;
 	public Properties dataprop;
 	
-	public BaseClass() {
+	public Base() {
 		
 		dataprop = new Properties();
 		File datapropFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\gattitude\\testData\\testdata.properties");
