@@ -5,8 +5,8 @@
     <classes>
       <class name="com.gattitude.testCases.TC_02_SearchTest">
         <methods>
-          <include name="searchItem"/>
           <include name="setUp"/>
+          <include name="searchItem" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.gattitude.testCases.TC_02_SearchTest -->
