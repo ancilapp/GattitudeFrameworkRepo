@@ -22,10 +22,12 @@ public class HomePage {
 	@FindBy(xpath="//div[@id='search']/descendant::button")
 	private WebElement btnSearch;
 	
+
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	
 	
 	//Actions
 	public void clickMyAccount() {
@@ -43,4 +45,7 @@ public class HomePage {
 	public void btnSearchItem() {
 		btnSearch.click();
 	}
+	
+
+	
 }

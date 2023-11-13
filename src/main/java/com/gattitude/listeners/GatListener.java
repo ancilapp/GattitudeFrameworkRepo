@@ -4,10 +4,7 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -23,17 +20,17 @@ public class GatListener implements ITestListener {
 	ExtentReports extentReport;
 	ExtentTest extentTest;
 
-	
+		
 	@Override
 	public void onStart(ITestContext context) {
 		extentReport = ExtentReporter.generateExtentReport();
 	}
 
-	
+
 	@Override
 	public void onTestStart(ITestResult result) {
 		extentTest = extentReport.createTest(result.getName());
-		extentTest.log(Status.INFO, result.getName()+"started executing");
+		extentTest.log(Status.INFO, result.getName()+" started executing");
 	}
 
 	@Override
