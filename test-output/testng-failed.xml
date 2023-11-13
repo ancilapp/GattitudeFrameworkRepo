@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.gattitude.testCases.TC_02_SearchTest">
+      <class name="com.gattitude.testCases.TC_03_ShoppingCartTest">
         <methods>
           <include name="setUp"/>
-          <include name="searchItem" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="shoppingCartDisplayedOnHomePage"/>
         </methods>
-      </class> <!-- com.gattitude.testCases.TC_02_SearchTest -->
+      </class> <!-- com.gattitude.testCases.TC_03_ShoppingCartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

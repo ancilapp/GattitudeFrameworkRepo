@@ -6,14 +6,20 @@
   </listeners>
   <test thread-count="5" name="Gattitude Tests(failed)">
     <classes>
-      <class name="com.gattitude.testCases.TC_02_RegisterTest">
+      <class name="com.gattitude.testCases.TC_03_ShoppingCartTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="shoppingCartDisplayedOnHomePage"/>
+        </methods>
+      </class> <!-- com.gattitude.testCases.TC_03_ShoppingCartTest -->
+      <class name="com.gattitude.testCases.TC_01_LoginTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyRegisterationPageDiaplyed"/>
-          <include name="selectYesForNewsletter"/>
+          <include name="verifyLoginWithInvalidCreds"/>
         </methods>
-      </class> <!-- com.gattitude.testCases.TC_02_RegisterTest -->
+      </class> <!-- com.gattitude.testCases.TC_01_LoginTest -->
     </classes>
   </test> <!-- Gattitude Tests(failed) -->
 </suite> <!-- Failed suite [Gattitude Automation Suite] -->

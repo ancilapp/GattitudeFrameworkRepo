@@ -21,7 +21,6 @@ public class TC_02_SearchTest extends Base {
 	
 	public WebDriver driver;
 	
-	
 	@BeforeMethod
 	public void setUp() {
 		driver = initBrowserOpenApplication();
@@ -36,12 +35,13 @@ public class TC_02_SearchTest extends Base {
 			driver.quit(); 
 	}
 	
+	
 	@DataProvider(name="searchItemList")
 	public Object[][] supplyTestData(){
-		Object [][] data = {{"canon","Canon EOS 5D"},{"phone","iPhone"}};
+		Object [][] data = {{"canon","Fail"},{"phone","iPhone"}};
 		return data;
 	}
-	
+
 	/*
 	@DataProvider(name="searchItemExcel")
 	public Object[][] supplyExcelData(){
@@ -56,7 +56,6 @@ public class TC_02_SearchTest extends Base {
 		homepg.enterSearchItem(lookupItem);
 		homepg.btnSearchItem();
 
-		
 		String lookingFor = driver.findElement(By.xpath("//div[@id='content']/descendant::h4")).getText();
 		System.out.println(lookingFor);
 		

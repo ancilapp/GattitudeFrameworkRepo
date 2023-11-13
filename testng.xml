@@ -9,8 +9,12 @@
   <test thread-count="5" name="Gattitude Tests">
     <classes>
     
-      <class name="com.gattitude.testCases.TC_01_LoginTest"/>
+    <!--
       <class name="com.gattitude.testCases.TC_02_SearchTest"/>
+    -->
+    
+      <class name="com.gattitude.testCases.TC_01_LoginTest"/>
+      <class name="com.gattitude.testCases.TC_03_ShoppingCartTest"/>
 
     </classes>
   </test> <!-- Test -->

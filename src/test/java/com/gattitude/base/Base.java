@@ -7,7 +7,10 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
+import com.gattitude.utils.ReadConfig;
 import com.gattitude.utils.Utilities;
 
 public class Base {
@@ -15,7 +18,10 @@ public class Base {
 	WebDriver driver;
 	public Properties prop;
 	public Properties dataprop;
+	ReadConfig readconfig = new ReadConfig();
 	
+	public String baseURL = readconfig.getApplicationUrl();
+
 	public Base() {
 		
 		dataprop = new Properties();
@@ -28,17 +34,7 @@ public class Base {
 				{
 						e.printStackTrace();
 				}
-		
-		prop = new Properties();
-		File propFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\gattitude\\config\\config.properties");
-		
-		try {
-			FileInputStream fis = new FileInputStream(propFile);
-			prop.load(fis);
-			}catch(Throwable e) 
-				{
-						e.printStackTrace();
-				}
+	
 	}
 		
 	public WebDriver initBrowserOpenApplication() 
@@ -47,10 +43,10 @@ public class Base {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Utilities.IMPLICIT_WAIT_TIME));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Utilities.PAGE_LOAD_TIME));
-		//driver.get(prop.getProperty("url"));
-		driver.get(prop.getProperty("url"));
+		driver.get(baseURL);
 		
 		return driver;
 	}
 	
+
 }
